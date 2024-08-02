@@ -53,7 +53,6 @@ public static void checkUrlExistence(String url) {
             }
         }
     }
-...
 ```
 
 ######  Problema 2: `NullPointerException` ao `sendAlert` por email
@@ -67,6 +66,7 @@ O sistema lança uma exceção `NullPointerException` ao tentar enviar alertas p
 java.lang.NullPointerException
 at com.cloud.alert.AlertManagerImpl$EmailAlert.sendAlert(AlertManagerImpl.java:790)
 at com.cloud.alert.AlertManagerImpl.sendAlert(AlertManagerImpl.java:248)
+...
 ```
 
 Método impactado:`sendAlert` em `AlertManagerImpl.java`
