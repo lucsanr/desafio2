@@ -30,7 +30,7 @@ Possiveis soluções:
 - Verificar se há restrições de rede ou firewall que possam estar bloqueando o acesso ao URL.
 - Verificar as configurações do `VolumeApiServiceImpl`.
 
-######  Código principal
+######  [Código principal](https://github.com/apache/cloudstack/blob/4.13/utils/src/main/java/com/cloud/utils/UriUtils.java#L466)
 
 ```
 public static void checkUrlExistence(String url) {
@@ -84,7 +84,7 @@ Soluções sugeridas:
 - Adicionar logs mais detalhados para capturar informações adicionais durante o envio de email.
 - Implementar verificações de nulo adicionais para evitar exceções.
 
-###### Código principal
+###### [Código principal](https://github.com/apache/cloudstack/blob/4.13/server/src/main/java/com/cloud/alert/AlertManagerImpl.java#L746)
 
 ``` 
 public void sendAlert(AlertType alertType, long dataCenterId, Long podId, String subject, String body) {
