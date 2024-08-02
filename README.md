@@ -15,7 +15,9 @@ at com.cloud.storage.VolumeApiServiceImpl.uploadVolume(VolumeApiServiceImpl.java
 ```
 
 Método impactado: `checkUrlExistence` em `UriUtils.java`
+
 Problema: Falha ao conectar-se ao URL do volume dentro do tempo limite de 5000 ms.
+
 Possíveis causas:
 - URL errado ou inacessível.
 - Servidor fora do ar ou inacessível da rede.
@@ -68,7 +70,9 @@ at com.cloud.alert.AlertManagerImpl.sendAlert(AlertManagerImpl.java:248)
 ```
 
 Método impactado:`sendAlert` em `AlertManagerImpl.java`
+
 Problema: O objeto `_emailAlert` está nulo quando o método `sendAlert` é chamado.
+
 Possíveis Causas:
   - Falha na inicialização do objeto `_emailAlert`.
   - Configurações de email (Simple Mail Transfer Protocol) ausentes ou incorretas.
